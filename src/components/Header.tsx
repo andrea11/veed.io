@@ -13,12 +13,12 @@ export default function Header() {
                 </div>
                 <div className="hidden lg:flex lg:flex-1">
                     <Link href="/favourites" className="text-sm font-semibold leading-6 text-gray-900">
-                        Favourite Repositories <span aria-hidden="true"></span>
+                        Favourite repositories <span aria-hidden="true"></span>
                     </Link>
                 </div>
                 <div className="hidden lg:flex lg:flex-1">
                     <Link href="/repositories" className="text-sm font-semibold leading-6 text-gray-900">
-                        Starred Repositories <span aria-hidden="true"></span>
+                        Discover trending repositories <span aria-hidden="true"></span>
                     </Link>
                 </div>
             </nav>

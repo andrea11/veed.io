@@ -1,4 +1,4 @@
-import RepositoryCard from "@/app/RepositoryCard";
+import RepositoryCard from "@/components/RepositoryCard";
 import {Endpoints} from "@octokit/types";
 
 type RepositoriesCatalogueProps = {

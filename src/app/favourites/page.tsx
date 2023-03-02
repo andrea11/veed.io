@@ -1,24 +1,22 @@
 "use client"
-import RepositoriesCatalogue from "@/app/RepositoriesCatalogue";
+import RepositoriesCatalogue from "@/components/RepositoriesCatalogue";
 import {useEffect, useState} from "react";
-import {Endpoints} from "@octokit/types";
-import Link from "next/link";
+import {Repositories, Repository} from "@/app/types";
 
-function getFavouriteRepositories() {
-    return JSON.parse(localStorage.getItem("favourites") ?? "[]")
+function getFavouriteRepositories(): Record<string, Repository> {
+    return JSON.parse(localStorage.getItem("favourites") ?? "{}")
 }
 
 const description = "Explore new repositories and click on the star icon to add a repository to your favourites."
 
 
 export default function Page() {
-    const [repositories, setRepositories] = useState<Endpoints["GET /search/repositories"]["response"]["data"]["items"]>([])
+    const [repositories, setRepositories] = useState<Repositories>([])
 
     useEffect(() => {
-        getFavouriteRepositories()
-        setRepositories(getFavouriteRepositories())
+        setRepositories(Object.values(getFavouriteRepositories()))
     }, [])
-    const title = repositories.length > 0 ? "Most Starred Repositories" : "No favourites yet"
+    const title = repositories.length > 0 ? "Favourite Repositories" : "No favourites yet"
 
     return (
         <div>

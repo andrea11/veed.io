@@ -1,6 +1,6 @@
 import {Octokit} from "octokit";
-import Pagination from "@/app/Pagination";
-import RepositoriesCatalogue from "@/app/RepositoriesCatalogue";
+import Pagination from "@/components/Pagination";
+import RepositoriesCatalogue from "@/components/RepositoriesCatalogue";
 
 type ReposPageProps = {
     params: {
@@ -12,7 +12,7 @@ export const revalidate = 60
 
 const octokit = new Octokit()
 
-function getMostStarredRepositories(offset: number) {
+function getRatedRepositories(offset: number) {
     return octokit.request("GET /search/repositories", {
         q: "created:>2017-01-10",
         sort: "stars",
@@ -22,14 +22,14 @@ function getMostStarredRepositories(offset: number) {
     })
 }
 
-const title = "Most Starred Repositories"
+const title = "Discover trending repositories"
 
 export default async function Page({params}: ReposPageProps) {
-    const repositories = await getMostStarredRepositories(parseInt(params.index) + 1)
+    const repositories = await getRatedRepositories(parseInt(params.index) + 1)
     return (
-        <div>
+        <>
             <RepositoriesCatalogue repositories={repositories.data.items} title={title}/>
             <Pagination limitPerPage={16} index={parseInt(params.index)}/>
-        </div>
+        </>
     )
 }

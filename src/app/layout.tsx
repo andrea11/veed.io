@@ -1,6 +1,6 @@
 import './globals.css'
-import Banner from "@/app/Banner";
-import Header from "@/app/Header";
+import Banner from "@/components/Banner";
+import Header from "@/components/Header";
 
 export const metadata = {
   title: 'Github Repos',
