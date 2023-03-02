@@ -1,3 +1,3 @@
-export async function GET(request: Request) {
+export async function test(request: Request) {
   return new Response('Hello, Next.js!')
 }
