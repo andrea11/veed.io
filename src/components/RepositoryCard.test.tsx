@@ -1,6 +1,6 @@
 import RepositoryCard from "@/components/RepositoryCard";
 import {act, cleanup, render, waitFor} from "@testing-library/react";
-import {Repository} from "@/app/types";
+import {Repository} from "@/types/repository";
 
 jest.mock("minidenticons", () => ({
     identicon: jest.fn()

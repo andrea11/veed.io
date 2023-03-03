@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Identicon from "@/components/Identicon";
 import {RepositoryStarButton} from "@/components/RepositoryStarButton";
-import {Repository} from "@/app/types";
+import {Repository} from "@/types/repository";
 import {useEffect, useState} from "react";
 
 type RepositoryCardProps = {

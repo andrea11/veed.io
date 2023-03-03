@@ -3,7 +3,7 @@ import Banner from "@/components/Banner";
 import Header from "@/components/Header";
 
 export const metadata = {
-  title: 'Github Repos',
+  title: 'Github Repositories',
   description: 'A simple app to search for Github repos',
 }
 

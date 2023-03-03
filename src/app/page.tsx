@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default async function Home() {
+export default function Home() {
     return (
         <div className="flex flex-col gap-y-10 justify-center h-full max-h-96 mx-auto max-w-7xl px-6 lg:px-8">
             <section className="items-stretch">

@@ -1,7 +1,7 @@
 "use client"
 import RepositoriesCatalogue from "@/components/RepositoriesCatalogue";
 import {useEffect, useState} from "react";
-import {Repositories, Repository} from "@/app/types";
+import {Repositories, Repository} from "@/types/repository";
 
 function getFavouriteRepositories(): Record<string, Repository> {
     return JSON.parse(localStorage.getItem("favourites") ?? "{}")
