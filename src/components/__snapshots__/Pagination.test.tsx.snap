@@ -144,25 +144,18 @@ exports[`Pagination renders correctly with no results 1`] = `
           aria-label="Pagination"
           class="isolate inline-flex -space-x-px rounded-md shadow-sm"
         >
+          <a
+            aria-current="page"
+            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-indigo-50 text-indigo-600 border-indigo-500"
+            href="/repositories/0"
+          >
+            0
+          </a>
           <span
             class="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700"
           >
             ...
           </span>
-          <a
-            aria-current="page"
-            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-white text-gray-500 border-gray-300"
-            href="/repositories/-2"
-          >
-            -2
-          </a>
-          <a
-            aria-current="page"
-            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-white text-gray-500 border-gray-300"
-            href="/repositories/-1"
-          >
-            -1
-          </a>
           <a
             aria-current="page"
             class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-indigo-50 text-indigo-600 border-indigo-500"

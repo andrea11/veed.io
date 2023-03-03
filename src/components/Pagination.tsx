@@ -6,11 +6,15 @@ export interface PaginationProps {
     index: number
 }
 
+function range(start:number, end:number) {
+  return Array(end - start + 1).fill(undefined).map((_, idx) => start + idx)
+}
+
 function computePaginationBoundaries(total: number, limitPerPage: number) {
     const paginationSize = Math.floor(total / limitPerPage)
     const pivot = Math.round(paginationSize / 2)
-    const leftBoundary = Array.from(Array(Math.min(pivot, 3)).keys())
-    const rightBoundary = [paginationSize - 2, paginationSize - 1, paginationSize]
+    const leftBoundary = range(0, Math.min(pivot, 2))
+    const rightBoundary = range(Math.max(pivot, paginationSize - 2), paginationSize)
     return [leftBoundary, rightBoundary]
 }
 
@@ -29,7 +33,7 @@ function generatePaginationLinks(total: number, limitPerPage: number, index: num
         )
     const ellipsisElement =
         <span key={-1}
-            className="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700">...</span>
+              className="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700">...</span>
 
     return [linksElement[0], ellipsisElement, linksElement[1]]
 }
