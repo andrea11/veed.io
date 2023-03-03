@@ -41,7 +41,7 @@ with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/
 - run docker
 
     ```bash
-    docker run -p 3000:3000 veed.io:latest
+    docker run -i -t -p 3000:3000 veed.io:latest
     ```
 
 \
