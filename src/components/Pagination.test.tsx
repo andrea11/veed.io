@@ -3,7 +3,7 @@ import {render} from "@testing-library/react";
 
 describe("Pagination", () => {
     it("renders correctly", () => {
-        const { container } = render(<Pagination total={10} index={1} limitPerPage={12}/>)
+        const { container } = render(<Pagination total={1000} index={1} limitPerPage={12}/>)
         expect(container).toMatchSnapshot()
     })
 

@@ -29,7 +29,7 @@ exports[`Pagination renders correctly 1`] = `
           <span
             class="font-medium"
           >
-            0
+            83
           </span>
            results
         </p>
@@ -45,6 +45,27 @@ exports[`Pagination renders correctly 1`] = `
           >
             ← Previous
           </a>
+          <a
+            aria-current="page"
+            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-white text-gray-500 border-gray-300"
+            href="/repositories/0"
+          >
+            0
+          </a>
+          <a
+            aria-current="page"
+            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-indigo-50 text-indigo-600 border-indigo-500"
+            href="/repositories/1"
+          >
+            1
+          </a>
+          <a
+            aria-current="page"
+            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-white text-gray-500 border-gray-300"
+            href="/repositories/2"
+          >
+            2
+          </a>
           <span
             class="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700"
           >
@@ -53,23 +74,23 @@ exports[`Pagination renders correctly 1`] = `
           <a
             aria-current="page"
             class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-white text-gray-500 border-gray-300"
-            href="/repositories/-2"
+            href="/repositories/81"
           >
-            -2
+            81
           </a>
           <a
             aria-current="page"
             class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-white text-gray-500 border-gray-300"
-            href="/repositories/-1"
+            href="/repositories/82"
           >
-            -1
+            82
           </a>
           <a
             aria-current="page"
             class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-white text-gray-500 border-gray-300"
-            href="/repositories/0"
+            href="/repositories/83"
           >
-            0
+            83
           </a>
           <a
             class="relative inline-flex items-center rounded-r-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
