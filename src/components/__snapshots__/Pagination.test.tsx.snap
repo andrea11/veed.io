@@ -54,7 +54,7 @@ exports[`Pagination renders correctly 1`] = `
           </a>
           <a
             aria-current="page"
-            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-indigo-50 text-indigo-600 border-indigo-500"
+            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-blue-50 text-blue-600 border-blue-500"
             href="/repositories/1"
           >
             1
@@ -146,7 +146,7 @@ exports[`Pagination renders correctly with no results 1`] = `
         >
           <a
             aria-current="page"
-            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-indigo-50 text-indigo-600 border-indigo-500"
+            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-blue-50 text-blue-600 border-blue-500"
             href="/repositories/0"
           >
             0
@@ -158,7 +158,7 @@ exports[`Pagination renders correctly with no results 1`] = `
           </span>
           <a
             aria-current="page"
-            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-indigo-50 text-indigo-600 border-indigo-500"
+            class="relative inline-flex items-center border px-4 py-2 text-sm font-medium focus:z-20 bg-blue-50 text-blue-600 border-blue-500"
             href="/repositories/0"
           >
             0
