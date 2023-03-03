@@ -28,10 +28,8 @@ function generatePaginationLinks(total: number, limitPerPage: number, index: num
             })
         )
     const ellipsisElement =
-        <span
+        <span key={-1}
             className="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700">...</span>
-    // <input className="relative inline-flex items-center bg-white px-4 py-2 text-sm font-medium text-gray-700 w-11" placeholder={"..."} type="text" />
-
 
     return [linksElement[0], ellipsisElement, linksElement[1]]
 }

@@ -7,9 +7,10 @@ type RepositoryLikeButtonProps = {
 export function RepositoryStarButton({enabled, numberOfLikes, onClick}: RepositoryLikeButtonProps) {
     return (
         <button
+            data-testid="repository-star-button"
             onClick={onClick}
             className="flex h-min w-min space-x-1 items-center rounded-full text-gray-400 hover:text-rose-600 bg-gray-700 hover:bg-rose-50 py-1 px-2 text-xs font-medium">
-            <svg aria-hidden="true" className={`w-5 h-5 hover:text-current ${enabled ? "text-yellow-400" : "text-grey-400"}`}
+            <svg data-testid="repository-star" aria-hidden="true" className={`w-5 h-5 hover:text-current ${enabled ? "text-yellow-400" : "text-grey-400"}`}
                  fill="currentColor" viewBox="0 0 20 20"
                  xmlns="http://www.w3.org/2000/svg"><title>First star</title>
                 <path

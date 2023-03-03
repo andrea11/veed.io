@@ -28,7 +28,7 @@ export default function RepositoryCard({repository}: RepositoryCardProps) {
 
     useEffect(() => {
         setStarred(isStarred(repository))
-    }, [])
+    }, [repository])
     const handleStarButtonClick = () => {
         const favourites = getFavouriteRepositories()
         if (starred) {

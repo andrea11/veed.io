@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner renders correctly 1`] = `
+<div>
+  <div
+    class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 py-2.5 px-6 sm:px-3.5 sm:before:flex-1"
+  >
+    <div
+      class="flex flex-grow items-center"
+    >
+      <p
+        class="text-sm leading-6 text-gray-900"
+      >
+        <strong
+          class="font-semibold"
+        >
+          Veed.io
+        </strong>
+        <svg
+          aria-hidden="true"
+          class="mx-2 inline h-0.5 w-0.5 fill-current"
+          viewBox="0 0 2 2"
+        >
+          <circle
+            cx="1"
+            cy="1"
+            r="1"
+          />
+        </svg>
+        Here the Frontend Coding Challenge by 
+        <i>
+          Andrea Accardo
+        </i>
+      </p>
+    </div>
+  </div>
+</div>
+`;

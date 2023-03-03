@@ -1,5 +1,5 @@
 import {redirect} from "next/navigation";
 
-export default function RepositoriesRedirection() {
+export default async function RepositoriesRedirection() {
     redirect("/repositories/0")
 }
