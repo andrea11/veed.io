@@ -58,6 +58,10 @@ export default function RepositoryCard({repository}: RepositoryCardProps) {
                             <span aria-hidden="true" className="absolute"/>
                             {repository.full_name}
                         </h3>
+                        <h4 className="text-sm text-gray-700 italic font-bold">
+                            <span aria-hidden="true" className="absolute"/>
+                            {repository.language}
+                        </h4>
                         <p className="mt-1 text-sm text-gray-500">{repository.description}</p>
                     </div>
                 </div>
