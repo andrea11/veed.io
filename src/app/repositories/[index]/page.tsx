@@ -16,14 +16,14 @@ type ReposPageProps = {
 const octokit = new Octokit()
 
 
-async function getRepositories(offset: number, language?: string): Promise<RepositoriesResponseData> {
+async function getRepositories(offset: number, language: string): Promise<RepositoriesResponseData> {
     const date = new Date()
     date.setDate(date.getDate() - 7);
     const oneWeekAgoISODate = date.toISOString().split('T')[0]
 
 
     const response = await octokit.request("GET /search/repositories", {
-        q: `created:>${oneWeekAgoISODate} ${language ? `language:${language}` : ""}`,
+        q: `created:>${oneWeekAgoISODate} ${language !== "none" ? `language:${language}` : ""}`,
         sort: "stars",
         order: "desc",
         per_page: 16,
