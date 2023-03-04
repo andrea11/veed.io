@@ -12,7 +12,7 @@ COPY src/ src/
 
 COPY public/ public/
 
-COPY jest.config.js next.config.js next-env.d.ts tsconfig.json postcss.config.js tailwind.config.js ./
+COPY jest.config.js next.config.js tsconfig.json postcss.config.js tailwind.config.js ./
 
 RUN npm run build
 
